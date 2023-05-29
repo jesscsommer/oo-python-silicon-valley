@@ -8,7 +8,9 @@ from lib import *
 #   fr1 = FundingRound( s1, vc1, 'Pre-Seed', 200000.99 )
 
 s1 = Startup("Bubble", "Joshua Haas", "bubble.io")
-s2 = Startup("Big Shot", "Some guyS", "domain.com")
+s2 = Startup("Big Shot", "Someone", "domain.com")
+vc1 = VentureCapitalist("Joe Schmo", 500)
+vc2 = VentureCapitalist("Jane Doe", 10000000000000000000000000)
 
 
 
