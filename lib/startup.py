@@ -21,14 +21,14 @@ class Startup:
    
    @classmethod
    def find_by_founder(cls, founder_name):
-      for startup in Startup.all:
+      for startup in cls.all:
          if startup.founder.lower() == founder_name.lower():
             return startup
       return "No founder by that name"
    
    @classmethod
    def domains(cls):
-      return [startup._domain for startup in Startup.all]
+      return [startup._domain for startup in cls.all]
    
    # Instance methods
    def pivot(self, domain, name):

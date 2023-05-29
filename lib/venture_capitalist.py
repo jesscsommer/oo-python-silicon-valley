@@ -12,14 +12,14 @@ class VentureCapitalist:
     # Class methods
     @classmethod
     def add_to_all_vcs(cls, new_vc):
-        if isinstance(new_vc, VentureCapitalist):
+        if isinstance(new_vc, cls):
             cls.all.append(new_vc)
         else: 
             raise TypeError("New VC must be an instance of Venture Capitalist")
     
     @classmethod
     def tres_commas_club(cls):
-        return [vc for vc in VentureCapitalist.all 
+        return [vc for vc in cls.all 
                 if vc.total_worth > 1000000000]
 
     # Properties
